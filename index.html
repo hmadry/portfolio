@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ee57545cab.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main-style.css" />
+    <link rel="stylesheet" href="css/knowledge-style.css" />
+    <link rel="stylesheet" href="css/social.css" />
+
+    <title>Hassan Madry | Software Developer</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <a href="index.html"
+            ><img src="img/logo3.png" alt="My Portfolio" id="logo"
+          /></a>
+          <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <h1>
+            I Am Hassan The
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["Developer", "Designer", "Test Engineer"]'
+            ></span>
+          </h1>
+          <p class="lead">I'm a passionate Software Engineer.</p>
+          <a href="work.html" class="btn-light">View My Work</a>
+        </div>
+      </div>
+    </header>
+    <!-- Knowledge Resume -->
+    <div class="sperator"></div>
+    <header id="main-header">
+      <div class="resume-container">
+        <h1><i class="fas fa-brain g-color"></i> Knowledge Resume</h1>
+        <h3><i class="fas fa-user g-color"></i> Hassan Madry</h3>
+      </div>
+    </header>
+
+    <section id="timeline">
+      <ul>
+        <li>
+          <div>
+            <h3><i class="fas fa-chevron-right"></i> EDUCATION :</h3>
+            <p>
+              EASTERN MICHIGAN UNIVERSITY : <br />
+              GPA: 3.73 <br />
+              Ypsilanti, MI <br />
+              Bachelor's computer science and math (Apr 2020)<br />
+              Awards & Honors <br />
+              &nbsp; &nbsp;● Magna cum laude
+              <br /><br />
+              WASHTENAW COMMUNITY COLLEGE <br />
+              GPA: 3.8 <br />
+              Ann Arbor, MI <br />
+              ● Certification C++/Java (May 2015) <br />
+              ● Associate in Arts (May 2015) <br />
+              ● Associate in Science (May 2015) <br />
+              Awards & Honors <br />
+              &nbsp;&nbsp; ● Highest Honor
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3><i class="fas fa-chevron-right"></i> Languages :</h3>
+            <p>
+              Proficient in: Python, HTML, CSS<br />Familiar with: C++, Java,
+              Android, C, javascript, Linux, NodeJs, Microchips, Bootstrap, SQL
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3><i class="fas fa-chevron-right"></i> Course Highlights:</h3>
+            <p>
+              Java Programming, C++, Data <br />
+              Structures, Object-Oriented Design, <br />
+              Database Management Systems, <br />
+              Information Computer Organization & <br />
+              Architecture, Web Design
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3><i class="fas fa-chevron-right"></i> SOFT SKILLS :</h3>
+            <p>
+              Adaptability , Strong Work Ethic, <br />
+              Quick Learner
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center py-2" id="home-c">
+      <div class="container">
+        <div class="socialMedia">
+          <div class="bg"></div>
+          <ul class="sci">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/hassan-madry-47811714a/"
+                class="linkedin"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/hmadry" class="github"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="youtube"
+                ><i class="fa fa-youtube" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/MadryHassan" class="twitter"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p>Copyright &copy; 2021. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="js/typewriter.js"></script>
+    <script src="js/main-script.js"></script>
+    <script src="/dist/js/van-script.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+        max: 30,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+
+      let list = document.querySelectorAll(".sci li");
+      let bg = document.querySelector(".bg");
+      list.forEach((elements) => {
+        elements.addEventListener("mouseenter", function (event) {
+          let color = event.target.getAttribute("data-color");
+          bg.style.backgroundColor = color;
+        });
+        elements.addEventListener("mouseleave", function (event) {
+          bg.style.backgroundColor = "#fff";
+        });
+      });
+    </script>
+  </body>
+</html>

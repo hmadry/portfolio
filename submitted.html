@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/main-style.css" />
+    <link rel="stylesheet" href="css/social.css" />
+    <script
+      src="https://kit.fontawesome.com/ee57545cab.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="utf-8" />
+    <title>My Work</title>
+  </head>
+  <body>
+    <header id="header-inner">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="img/logo3.png" alt="My Portfolio" id="logo" \ />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html" class="current">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+<main class="contact-contents">
+  <video autoplay muted loop>
+    <source src="/dist/img/about.mp4" type="video/mp4" />
+  </video>
+
+  <section>
+    <div class="submitted-container" style="color: silver; max-width: 50%;">
+      <h1>Thanks!</h1>
+      <br>
+      <h4>The form was submitted successfully.</h4>
+  </section>
+</main>
+    <!-- Footer -->
+    <footer class="text-center py-2" id="home-c">
+      <div class="container">
+        <div class="socialMedia">
+          <div class="bg"></div>
+          <ul class="sci">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/hassan-madry-47811714a/"
+                class="linkedin"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/hmadry" class="github"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="youtube"
+                ><i class="fa fa-youtube" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/MadryHassan" class="twitter"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p>Copyright &copy; 2021. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/main-script.js"></script>
+
+    <script src="/dist/js/van-script.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+        max: 30,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+
+      let list = document.querySelectorAll(".sci li");
+      let bg = document.querySelector(".bg");
+      list.forEach((elements) => {
+        elements.addEventListener("mouseenter", function (event) {
+          let color = event.target.getAttribute("data-color");
+          bg.style.backgroundColor = color;
+        });
+        elements.addEventListener("mouseleave", function (event) {
+          bg.style.backgroundColor = "#fff";
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 100,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+  </body>
+</html>
