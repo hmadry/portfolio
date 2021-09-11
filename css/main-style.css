@@ -584,7 +584,8 @@ img {
   #home-c .process,
   #about-d .testimonials,
   #contact-b .contact-info,
-  .items {
+  .items,
+  .header-home {
     grid-template-columns: 1fr;
   }
   #home-a .specials div {
